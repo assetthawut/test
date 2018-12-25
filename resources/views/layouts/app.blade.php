@@ -44,6 +44,29 @@
             </div>
         </nav>
         <main class="py-4">
+            <div class="container">
+                    <div class="row justify-content-center space">
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                                  
+
+                                                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                                      <div class="navbar-nav">
+                                                        <a class="nav-item nav-link active" href="/test/question1">Question 1</a>
+                                                        <a class="nav-item nav-link active" href="/test/question2">Question 2</a>
+                                                        <a class="nav-item nav-link active" href="/test/question3">Question 3</a>
+
+
+                                                      </div>
+                                                    </div>
+                                                  </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
             @yield('content')
         </main>
     </div>
