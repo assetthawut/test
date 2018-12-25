@@ -90,7 +90,6 @@ class TestController extends Controller
     }
 
 
-
     public function question1(){
 
         $startData = [3,5,9,15];
@@ -105,12 +104,54 @@ class TestController extends Controller
         $positiveNum = $this->getDiff( 10, $expectValue );
         $negativeNum = $this->getDiff(-10, $expectValue );
         $closestType = $this->getClosestZeroType($positiveNum,$negativeNum);
-
-        $result = $this->getResult($closestType, $expectValue);
+        $result      = $this->getResult($closestType, $expectValue);
         return view('test.question2',['result' => $result]);
 
         
     }
+
+    public function question3(){
+
+        $startData = array('1' => 5,'2' => 25,'3' => 325,'4' => 4325);
+
+        // end($startData );         
+        // $key = key($startData);  
+        
+        // echo $key;
+        
+        
+        return view('test.question3',['startData' => $startData]);
+
+    }
+
+
+
+    public function getThenValue(Request $request){
+
+        $currentData =    $request->input('question3');
+        $lastkey     =    $this->getlastKey($currentData);
+        $lastValue   = $currentData[$lastkey];
+
+        $nextKey     = (int) $lastkey + 1;
+        $nextValue   =  (string)$nextKey.(string)$lastValue;
+
+        $currentData[$nextKey] = $nextValue ;
+        $startData = $currentData;
+        
+        return view('test.question3',['startData' => $startData]);
+
+        
+    }
+
+    public function getlastKey($currentData){
+  
+        end($currentData);
+        $lastkey = key($currentData); 
+        return $lastkey;
+       
+    }
+
+
 
     public function getDiff($testNumber,$expectValue){
 
@@ -190,7 +231,6 @@ class TestController extends Controller
         return $equationString;
 
     }
-
 
 
 
