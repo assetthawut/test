@@ -8,6 +8,8 @@
 
 3. Rename **.env.example** to **.env**. 
 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 4. Setup application. 
 
 > php artisan key:generate
