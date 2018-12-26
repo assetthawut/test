@@ -8,7 +8,7 @@
 
 3. Rename **.env.example** to **.env**. 
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Rename .env file](https://github.com/assetthawut/test/blob/master/readme/step3.gif)
 
 4. Setup application. 
 
