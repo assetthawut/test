@@ -1,4 +1,4 @@
-## install
+## Installing
 
 1. Donwload this repository
 
