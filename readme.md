@@ -1,8 +1,8 @@
 ## Installing
 
-1. Donwload this repository.
+1. Download this repository.
 
-2. run command prompt in root of project and install dependency.
+2. Run command prompt in root of project and install dependency.
 
 > composer install 
 
